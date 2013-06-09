@@ -15,4 +15,10 @@ Public Partial Class MainForm
 		' TODO : Add constructor code after InitializeComponents
 		'
 	End Sub
+	Sub LoginLoad(sender As Object, e As EventArgs)
+		
+		
+	End Sub
+	
+
 End Class
