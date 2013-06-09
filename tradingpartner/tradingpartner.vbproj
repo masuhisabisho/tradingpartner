@@ -60,6 +60,22 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="B000Sql\SelectSql.Designer.vb">
+      <DependentUpon>SelectSql.vb</DependentUpon>
+    </Compile>
+    <Compile Include="B000Sql\SelectSql.vb" />
+    <Compile Include="C000Main\C000Main.Designer.vb">
+      <DependentUpon>C000Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="C000Main\C000Main.vb" />
+    <Compile Include="C000Main\C001OrderGrid.Designer.vb">
+      <DependentUpon>C001OrderGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="C000Main\C001OrderGrid.vb" />
+    <Compile Include="C000Main\C002SearchGridvb.Designer.vb">
+      <DependentUpon>C002SearchGridvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="C000Main\C002SearchGridvb.vb" />
     <Compile Include="MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
     </Compile>
@@ -73,9 +89,25 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="C000Main\C000Main.resx">
+      <DependentUpon>C000Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C000Main\C002SearchGridvb.resx">
+      <DependentUpon>C002SearchGridvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C000Main\OrderGrid.resx">
+      <DependentUpon>C001OrderGrid.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="A000DBdefinition" />
+    <Folder Include="A001Pictures" />
+    <Folder Include="A002Icons" />
+    <Folder Include="C000Main" />
+    <Folder Include="B000Sql" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
 </Project>

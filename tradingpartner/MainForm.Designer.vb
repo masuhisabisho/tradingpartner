@@ -6,7 +6,7 @@
 ' 
 ' To change this template use Tools | Options | Coding | Edit Standard Headers.
 '
-Partial Class MainForm
+Partial Class Login
 	Inherits System.Windows.Forms.Form
 	
 	''' <summary>
@@ -44,7 +44,7 @@ Partial Class MainForm
 		'Txt_Password
 		'
 		Me.Txt_Password.Font = New System.Drawing.Font("MS UI Gothic", 14!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128,Byte))
-		Me.Txt_Password.Location = New System.Drawing.Point(165, 83)
+		Me.Txt_Password.Location = New System.Drawing.Point(114, 77)
 		Me.Txt_Password.Name = "Txt_Password"
 		Me.Txt_Password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
 		Me.Txt_Password.Size = New System.Drawing.Size(162, 26)
@@ -52,7 +52,7 @@ Partial Class MainForm
 		'
 		'Brn_Login
 		'
-		Me.Brn_Login.Location = New System.Drawing.Point(355, 82)
+		Me.Brn_Login.Location = New System.Drawing.Point(304, 76)
 		Me.Brn_Login.Name = "Brn_Login"
 		Me.Brn_Login.Size = New System.Drawing.Size(75, 27)
 		Me.Brn_Login.TabIndex = 1
@@ -62,7 +62,7 @@ Partial Class MainForm
 		'Lbl_Ver
 		'
 		Me.Lbl_Ver.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-		Me.Lbl_Ver.Location = New System.Drawing.Point(168, 196)
+		Me.Lbl_Ver.Location = New System.Drawing.Point(48, 179)
 		Me.Lbl_Ver.Name = "Lbl_Ver"
 		Me.Lbl_Ver.Size = New System.Drawing.Size(50, 14)
 		Me.Lbl_Ver.TabIndex = 2
@@ -71,7 +71,7 @@ Partial Class MainForm
 		'Lbl_VerNo
 		'
 		Me.Lbl_VerNo.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-		Me.Lbl_VerNo.Location = New System.Drawing.Point(224, 196)
+		Me.Lbl_VerNo.Location = New System.Drawing.Point(104, 179)
 		Me.Lbl_VerNo.Name = "Lbl_VerNo"
 		Me.Lbl_VerNo.Size = New System.Drawing.Size(38, 14)
 		Me.Lbl_VerNo.TabIndex = 3
@@ -80,7 +80,7 @@ Partial Class MainForm
 		'Lbl_Update
 		'
 		Me.Lbl_Update.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-		Me.Lbl_Update.Location = New System.Drawing.Point(316, 196)
+		Me.Lbl_Update.Location = New System.Drawing.Point(196, 179)
 		Me.Lbl_Update.Name = "Lbl_Update"
 		Me.Lbl_Update.Size = New System.Drawing.Size(88, 14)
 		Me.Lbl_Update.TabIndex = 4
@@ -89,25 +89,25 @@ Partial Class MainForm
 		'Lbl_Date
 		'
 		Me.Lbl_Date.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-		Me.Lbl_Date.Location = New System.Drawing.Point(409, 196)
+		Me.Lbl_Date.Location = New System.Drawing.Point(289, 179)
 		Me.Lbl_Date.Name = "Lbl_Date"
 		Me.Lbl_Date.Size = New System.Drawing.Size(100, 14)
 		Me.Lbl_Date.TabIndex = 5
 		Me.Lbl_Date.Text = "0000/00/00 00:00"
 		'
-		'MainForm
+		'Login
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 12!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.BackColor = System.Drawing.Color.White
-		Me.ClientSize = New System.Drawing.Size(516, 222)
+		Me.ClientSize = New System.Drawing.Size(443, 222)
 		Me.Controls.Add(Me.Lbl_Date)
 		Me.Controls.Add(Me.Lbl_Update)
 		Me.Controls.Add(Me.Lbl_VerNo)
 		Me.Controls.Add(Me.Lbl_Ver)
 		Me.Controls.Add(Me.Brn_Login)
 		Me.Controls.Add(Me.Txt_Password)
-		Me.Name = "MainForm"
+		Me.Name = "Login"
 		Me.Text = "ログイン"
 		AddHandler Load, AddressOf Me.LoginLoad
 		Me.ResumeLayout(false)
