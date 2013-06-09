@@ -76,10 +76,30 @@
       <DependentUpon>C002SearchGridvb.vb</DependentUpon>
     </Compile>
     <Compile Include="C000Main\C002SearchGridvb.vb" />
-    <Compile Include="MainForm.Designer.vb">
-      <DependentUpon>MainForm.vb</DependentUpon>
+    <Compile Include="C000Main\C003FeeMenu.Designer.vb">
+      <DependentUpon>C003FeeMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.vb" />
+    <Compile Include="C000Main\C003FeeMenu.vb" />
+    <Compile Include="C000Main\C004Report.Designer.vb">
+      <DependentUpon>C004Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="C000Main\C004Report.vb" />
+    <Compile Include="C000Main\C005Analyze.Designer.vb">
+      <DependentUpon>C005Analyze.vb</DependentUpon>
+    </Compile>
+    <Compile Include="C000Main\C005Analyze.vb" />
+    <Compile Include="C000Main\C007Master.Designer.vb">
+      <DependentUpon>C007Master.vb</DependentUpon>
+    </Compile>
+    <Compile Include="C000Main\C007Master.vb" />
+    <Compile Include="C001Order\RegOrder.Designer.vb">
+      <DependentUpon>RegOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="C001Order\RegOrder.vb" />
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="Properties\AssemblyInfo.vb" />
   </ItemGroup>
@@ -95,11 +115,26 @@
     <EmbeddedResource Include="C000Main\C002SearchGridvb.resx">
       <DependentUpon>C002SearchGridvb.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="C000Main\C003FeeMenu.resx">
+      <DependentUpon>C003FeeMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C000Main\C004Report.resx">
+      <DependentUpon>C004Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C000Main\C005Analyze.resx">
+      <DependentUpon>C005Analyze.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C000Main\C007Master.resx">
+      <DependentUpon>C007Master.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="C000Main\OrderGrid.resx">
       <DependentUpon>C001OrderGrid.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.vb</DependentUpon>
+    <EmbeddedResource Include="C001Order\RegOrder.resx">
+      <DependentUpon>RegOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -108,6 +143,7 @@
     <Folder Include="A002Icons" />
     <Folder Include="C000Main" />
     <Folder Include="B000Sql" />
+    <Folder Include="C001Order" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
 </Project>

@@ -52,6 +52,13 @@ Partial Class SearchGridvb
 		Me.Rdo_WH = New System.Windows.Forms.RadioButton()
 		Me.Rdo_PI = New System.Windows.Forms.RadioButton()
 		Me.Btn_Clear = New System.Windows.Forms.Button()
+		Me.Txt_Csno = New System.Windows.Forms.TextBox()
+		Me.Txt_PO = New System.Windows.Forms.TextBox()
+		Me.Txt_PI = New System.Windows.Forms.TextBox()
+		Me.Txt_Item = New System.Windows.Forms.TextBox()
+		Me.Txt_Jan = New System.Windows.Forms.TextBox()
+		Me.Txt_Quote = New System.Windows.Forms.TextBox()
+		Me.Txt_Port = New System.Windows.Forms.TextBox()
 		CType(Me.Dgv_Order,System.ComponentModel.ISupportInitialize).BeginInit
 		Me.groupBox1.SuspendLayout
 		Me.SuspendLayout
@@ -67,7 +74,7 @@ Partial Class SearchGridvb
 		'
 		'Btn_Search
 		'
-		Me.Btn_Search.Location = New System.Drawing.Point(592, 188)
+		Me.Btn_Search.Location = New System.Drawing.Point(650, 137)
 		Me.Btn_Search.Name = "Btn_Search"
 		Me.Btn_Search.Size = New System.Drawing.Size(93, 50)
 		Me.Btn_Search.TabIndex = 2
@@ -100,7 +107,7 @@ Partial Class SearchGridvb
 		'
 		Me.Llb_Quote.BackColor = System.Drawing.Color.Navy
 		Me.Llb_Quote.ForeColor = System.Drawing.Color.Yellow
-		Me.Llb_Quote.Location = New System.Drawing.Point(360, 9)
+		Me.Llb_Quote.Location = New System.Drawing.Point(265, 9)
 		Me.Llb_Quote.Name = "Llb_Quote"
 		Me.Llb_Quote.Size = New System.Drawing.Size(100, 22)
 		Me.Llb_Quote.TabIndex = 11
@@ -111,7 +118,7 @@ Partial Class SearchGridvb
 		'
 		Me.Lbl_Jan.BackColor = System.Drawing.Color.Navy
 		Me.Lbl_Jan.ForeColor = System.Drawing.Color.Yellow
-		Me.Lbl_Jan.Location = New System.Drawing.Point(360, 50)
+		Me.Lbl_Jan.Location = New System.Drawing.Point(265, 50)
 		Me.Lbl_Jan.Name = "Lbl_Jan"
 		Me.Lbl_Jan.Size = New System.Drawing.Size(100, 22)
 		Me.Lbl_Jan.TabIndex = 12
@@ -133,7 +140,7 @@ Partial Class SearchGridvb
 		'
 		Me.Lbl_Item.BackColor = System.Drawing.Color.Navy
 		Me.Lbl_Item.ForeColor = System.Drawing.Color.Yellow
-		Me.Lbl_Item.Location = New System.Drawing.Point(360, 31)
+		Me.Lbl_Item.Location = New System.Drawing.Point(265, 31)
 		Me.Lbl_Item.Name = "Lbl_Item"
 		Me.Lbl_Item.Size = New System.Drawing.Size(100, 22)
 		Me.Lbl_Item.TabIndex = 14
@@ -162,7 +169,7 @@ Partial Class SearchGridvb
 		Me.groupBox1.Controls.Add(Me.Rdo_Agent)
 		Me.groupBox1.Controls.Add(Me.Rdo_WH)
 		Me.groupBox1.Controls.Add(Me.Rdo_PI)
-		Me.groupBox1.Location = New System.Drawing.Point(12, 75)
+		Me.groupBox1.Location = New System.Drawing.Point(48, 87)
 		Me.groupBox1.Name = "groupBox1"
 		Me.groupBox1.Size = New System.Drawing.Size(532, 100)
 		Me.groupBox1.TabIndex = 16
@@ -267,18 +274,81 @@ Partial Class SearchGridvb
 		'
 		'Btn_Clear
 		'
-		Me.Btn_Clear.Location = New System.Drawing.Point(592, 126)
+		Me.Btn_Clear.Location = New System.Drawing.Point(650, 75)
 		Me.Btn_Clear.Name = "Btn_Clear"
 		Me.Btn_Clear.Size = New System.Drawing.Size(93, 50)
 		Me.Btn_Clear.TabIndex = 17
 		Me.Btn_Clear.Text = "クリア"
 		Me.Btn_Clear.UseVisualStyleBackColor = true
 		'
+		'Txt_Csno
+		'
+		Me.Txt_Csno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.Txt_Csno.Location = New System.Drawing.Point(118, 9)
+		Me.Txt_Csno.Name = "Txt_Csno"
+		Me.Txt_Csno.Size = New System.Drawing.Size(102, 19)
+		Me.Txt_Csno.TabIndex = 18
+		'
+		'Txt_PO
+		'
+		Me.Txt_PO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.Txt_PO.Location = New System.Drawing.Point(118, 56)
+		Me.Txt_PO.Name = "Txt_PO"
+		Me.Txt_PO.Size = New System.Drawing.Size(102, 19)
+		Me.Txt_PO.TabIndex = 19
+		'
+		'Txt_PI
+		'
+		Me.Txt_PI.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.Txt_PI.Location = New System.Drawing.Point(118, 31)
+		Me.Txt_PI.Name = "Txt_PI"
+		Me.Txt_PI.Size = New System.Drawing.Size(102, 19)
+		Me.Txt_PI.TabIndex = 20
+		'
+		'Txt_Item
+		'
+		Me.Txt_Item.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.Txt_Item.Location = New System.Drawing.Point(384, 31)
+		Me.Txt_Item.Name = "Txt_Item"
+		Me.Txt_Item.Size = New System.Drawing.Size(102, 19)
+		Me.Txt_Item.TabIndex = 23
+		'
+		'Txt_Jan
+		'
+		Me.Txt_Jan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.Txt_Jan.Location = New System.Drawing.Point(384, 56)
+		Me.Txt_Jan.Name = "Txt_Jan"
+		Me.Txt_Jan.Size = New System.Drawing.Size(102, 19)
+		Me.Txt_Jan.TabIndex = 22
+		'
+		'Txt_Quote
+		'
+		Me.Txt_Quote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.Txt_Quote.Location = New System.Drawing.Point(384, 9)
+		Me.Txt_Quote.Name = "Txt_Quote"
+		Me.Txt_Quote.Size = New System.Drawing.Size(102, 19)
+		Me.Txt_Quote.TabIndex = 21
+		'
+		'Txt_Port
+		'
+		Me.Txt_Port.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.Txt_Port.Location = New System.Drawing.Point(641, 9)
+		Me.Txt_Port.Name = "Txt_Port"
+		Me.Txt_Port.Size = New System.Drawing.Size(102, 19)
+		Me.Txt_Port.TabIndex = 24
+		'
 		'SearchGridvb
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 12!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(810, 479)
+		Me.Controls.Add(Me.Txt_Port)
+		Me.Controls.Add(Me.Txt_Item)
+		Me.Controls.Add(Me.Txt_Jan)
+		Me.Controls.Add(Me.Txt_Quote)
+		Me.Controls.Add(Me.Txt_PI)
+		Me.Controls.Add(Me.Txt_PO)
+		Me.Controls.Add(Me.Txt_Csno)
 		Me.Controls.Add(Me.Btn_Clear)
 		Me.Controls.Add(Me.groupBox1)
 		Me.Controls.Add(Me.Lbl_PI)
@@ -297,7 +367,15 @@ Partial Class SearchGridvb
 		CType(Me.Dgv_Order,System.ComponentModel.ISupportInitialize).EndInit
 		Me.groupBox1.ResumeLayout(false)
 		Me.ResumeLayout(false)
+		Me.PerformLayout
 	End Sub
+	Private Txt_Port As System.Windows.Forms.TextBox
+	Private Txt_Quote As System.Windows.Forms.TextBox
+	Private Txt_Jan As System.Windows.Forms.TextBox
+	Private Txt_Item As System.Windows.Forms.TextBox
+	Private Txt_PI As System.Windows.Forms.TextBox
+	Private Txt_PO As System.Windows.Forms.TextBox
+	Private Txt_Csno As System.Windows.Forms.TextBox
 	Private Btn_Clear As System.Windows.Forms.Button
 	Private Rdo_WH As System.Windows.Forms.RadioButton
 	Private Rdo_Agent As System.Windows.Forms.RadioButton
